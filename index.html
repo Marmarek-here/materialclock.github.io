@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official App Name</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Rounded" rel="stylesheet">
+  
+  <style>
+    :root {
+      /* Цветовая схема Material 3 Expressive (Dynamic Purple) */
+      --md-primary: #6750A4;
+      --md-on-primary: #FFFFFF;
+      --md-primary-container: #EADDFF;
+      --md-on-primary-container: #21005D;
+      --md-surface: #FEF7FF;
+      --md-surface-variant: #E7E0EC;
+      --md-outline: #79747E;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Google Sans', 'Roboto', sans-serif;
+      background-color: var(--md-surface);
+      color: #1C1B1F;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Шапка (Header) */
+    header {
+      width: 100%;
+      max-width: 800px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .app-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    .logo-icon {
+      background-color: var(--md-primary);
+      color: white;
+      padding: 8px;
+      border-radius: 12px;
+    }
+
+    /* Главный блок (Hero Section) */
+    .hero {
+      width: 90%;
+      max-width: 600px;
+      background-color: var(--md-primary-container);
+      border-radius: 32px; /* Очень сильное скругление M3 */
+      padding: 40px 24px;
+      text-align: center;
+      margin-top: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin: 0 0 16px 0;
+      color: var(--md-on-primary-container);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 32px;
+      opacity: 0.8;
+    }
+
+    /* Кнопка в стиле M3 */
+    .btn-download {
+      background-color: var(--md-primary);
+      color: var(--md-on-primary);
+      border: none;
+      padding: 16px 24px;
+      border-radius: 100px; /* Полностью скругленная кнопка */
+      font-size: 1rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      transition: transform 0.2s;
+    }
+
+    .btn-download:active {
+      transform: scale(0.95);
+    }
+
+    /* Секция с функциями */
+    .features {
+      width: 90%;
+      max-width: 600px;
+      margin-top: 32px;
+      display: grid;
+      gap: 16px;
+    }
+
+    .feature-card {
+      background-color: var(--md-surface-variant);
+      padding: 20px;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .feature-card span {
+      color: var(--md-primary);
+      font-size: 2rem;
+    }
+
+    footer {
+      margin: 60px 0 30px 0;
+      font-size: 0.8rem;
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="app-logo">
+      <div class="material-icons-rounded logo-icon">auto_awesome</div>
+      <span>My Cool App</span>
+    </div>
+  </header>
+
+  <main class="hero">
+    <h1>The one who's running the show!</h1>
+    <p>Простое и мощное приложение для тех, кто любит цифровой цирк и крутые интерфейсы.</p>
+    
+    <a href="#" class="btn-download">
+      <span class="material-icons-rounded">download</span>
+      Скачать APK
+    </a>
+  </main>
+
+  <section class="features">
+    <div class="feature-card">
+      <span class="material-icons-rounded">palette</span>
+      <div>
+        <strong>Material You</strong>
+        <p style="margin:4px 0 0 0; font-size:0.9rem;">Интерфейс подстраивается под тебя.</p>
+      </div>
+    </div>
+    
+    <div class="feature-card">
+      <span class="material-icons-rounded">bolt</span>
+      <div>
+        <strong>Быстрая работа</strong>
+        <p style="margin:4px 0 0 0; font-size:0.9rem;">Оптимизировано для S25 Ultra.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 Твой Ник. Сделано с любовью к TADC.
+  </footer>
+
+</body>
+</html>
